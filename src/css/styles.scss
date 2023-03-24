@@ -33,6 +33,27 @@ $al-dark-blue: #27397B;
     margin-right: #{$i}px !important;
   }
 
+  .my--#{$i}px {
+    margin-top: -#{$i}px !important;
+    margin-bottom: -#{$i}px !important;
+  }
+  .mx--#{$i}px {
+    margin-left: -#{$i}px !important;
+    margin-right: -#{$i}px !important;
+  }
+  .mt--#{$i}px {
+    margin-top:- #{$i}px !important;
+  }
+  .mb--#{$i}px {
+    margin-bottom: -#{$i}px !important;
+  }
+  .ml--#{$i}px {
+    margin-left: -#{$i}px !important;
+  }
+  .mr--#{$i}px {
+    margin-right: -#{$i}px !important;
+  }
+
   .py-#{$i}px {
     padding-top: #{$i}px !important;
     padding-bottom: #{$i}px !important;
@@ -163,7 +184,7 @@ a {
 
 .pricing-section {
   background-color: #F4F0F0;
-  padding: 30px 0;
+  padding: 60px 0;
 
   .pricing-plan-box {
     border-radius: 40px;
