@@ -1,0 +1,230 @@
+$al-pink: #F2709C;
+$al-green: #8BC68B;
+$al-yellow: #F4E959;
+$al-dark-blue: #27397B;
+
+
+@font-face {
+  font-family: "Work Sans";
+  src: url('../assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+  //src: url('../assets/fonts/WorkSans-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+
+@for $i from 0 through 100 {
+  .my-#{$i}px {
+    margin-top: #{$i}px !important;
+    margin-bottom: #{$i}px !important;
+  }
+  .mx-#{$i}px {
+    margin-left: #{$i}px !important;
+    margin-right: #{$i}px !important;
+  }
+  .mt-#{$i}px {
+    margin-top: #{$i}px !important;
+  }
+  .mb-#{$i}px {
+    margin-bottom: #{$i}px !important;
+  }
+  .ml-#{$i}px {
+    margin-left: #{$i}px !important;
+  }
+  .mr-#{$i}px {
+    margin-right: #{$i}px !important;
+  }
+
+  .py-#{$i}px {
+    padding-top: #{$i}px !important;
+    padding-bottom: #{$i}px !important;
+  }
+  .px-#{$i}px {
+    padding-left: #{$i}px !important;
+    padding-right: #{$i}px !important;
+  }
+  .pt-#{$i}px {
+    padding-top: #{$i}px !important;
+  }
+  .pb-#{$i}px {
+    padding-bottom: #{$i}px !important;
+  }
+  .pl-#{$i}px {
+    padding-left: #{$i}px !important;
+  }
+  .pr-#{$i}px {
+    padding-right: #{$i}px !important;
+  }
+}
+
+body {
+  font-family: "Work Sans", "Helvetica Neue", sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 17px;
+  color: #12141B;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.al-btn {
+  border-radius: 100px;
+  background: $al-yellow;
+  color: $al-dark-blue;
+  font-weight: 700;
+  padding: 5px 15px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navbar {
+  .nav-item {
+    font-size: 14px;
+    padding: 5px 15px;
+    .active {
+      font-weight: 600;
+    }
+  }
+}
+
+.text-green {
+  color: $al-green;
+}
+.text-pink {
+  color: $al-pink;
+}
+
+.main-section {
+  text-align: center;
+  h1 {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  p {
+    font-size: 25px;
+    font-weight: 200;
+    line-height: 29px;
+    color: #12141B;
+  }
+}
+
+.secondary-section-text-left-image-right {
+  text-align: right;
+}
+
+.secondary-section-text-right-image-left {
+  .bullet-list {
+    .bullet {
+      margin-top: 15px;
+      .title {
+        font-weight: 600;
+      }
+      .description {
+        font-weight: 200;
+      }
+    }
+  }
+}
+
+.carrousel-section {
+  width: 100%;
+  .title-wrapper {
+    max-width: 436px;
+    display: inline-block;
+  }
+
+  .client-banner{
+    text-align: center;
+    display: inline-block;
+    margin: 0 10px;
+    .image {
+      display: inline-block;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 206px;
+      height: 206px;
+      border-radius: 40px;
+    }
+  }
+
+}
+
+.pricing-section {
+  background-color: #F4F0F0;
+  padding: 30px 0;
+
+  .pricing-plan-box {
+    border-radius: 40px;
+    padding: 30px 15px 40px 15px;
+    text-align: center;
+    h3 {
+      font-size: 20px;
+    }
+    .price {
+      font-size: 35px;
+      margin: 12px 0;
+    }
+    .pricing-item {
+      margin-top: 25px;
+      font-size: 13px;
+      .title {
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+      .description {
+        font-weight: 300;
+      }
+    }
+    &.pricing-pink {
+      color: white;
+      background-color: $al-pink;
+    }
+    &.pricing-white {
+      border: black 1px solid;
+      h3 {
+        color: $al-pink;
+      }
+    }
+  }
+}
+
+.footer-leaves {
+  height: 210px;
+  width: 100%;
+  background-repeat: repeat-x;
+  background-image: url("../assets/images/leaves.png")
+}
+
+.footer {
+  background: $al-pink;
+  color: white;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    li {
+      font-size: 13px;
+    }
+  }
+
+  .copyright {
+    background: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
