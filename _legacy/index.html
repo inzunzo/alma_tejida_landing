@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alma Tejida</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <img class="logo" src="img/logo.svg" alt="alma tejida" />
+        <span>¿Cómo lo Hacemos?</span>
+        <span>Nuevos Negocios</span>
+        <span>Inspirémonos</span>
+        <span>Beneficios</span>
+        <a href="https://dashboard.almatejida.com/"><button class="cta">Regístrate</button></a>
+      </header>
+
+      <section class="banner">
+        <div class="content">
+          <h1>
+            SOMOS UNA PLATAFORMA QUE APOYA
+            <span class="primary-color">LA ECONOMÍA SUSTENTABLE</span>
+          </h1>
+          <p>
+            Trabajamos con emprendedores locales que le apuestan a un mundo
+            mejor.
+          </p>
+          <a href="https://dashboard.almatejida.com/"><button class="cta">Regístrate</button></a>
+        </div>
+        <img src="img/banner1.svg" alt="" />
+      </section>
+
+      <section>
+        <h2>¿CÓMO LO HACEMOS?</h2>
+        <div class="cards">
+          <div class="card">
+            <img src="img/card1.svg" alt="" />
+            <p>¡Conectando emprendedores con consumidores!</p>
+          </div>
+          <div class="card">
+            <img src="img/card2.svg" alt="" />
+            <p>¡Fomentando la participación!</p>
+          </div>
+          <div class="card">
+            <img src="img/card3.svg" alt="" />
+            <p>¡Construyendo oportunidades!</p>
+          </div>
+        </div>
+      </section>
+
+      <section hidden>
+        <h2 class="center">NUEVOS NEGOCIOS</h2>
+        <div id="carousel">
+          <div id="left">
+            <button>
+              <img src="img/icons/chevron-left.svg" alt="left" />
+            </button>
+          </div>
+          <div id="slider">
+            <div id="container"></div>
+          </div>
+          <div id="right">
+            <button>
+              <img src="img/icons/chevron-right.svg" alt="right" />
+            </button>
+          </div>
+          <template>
+            <div class="card">
+              <div class="img"></div>
+              <div class="info">
+                <div class="name"></div>
+                <div class="distance">
+                  <img src="img/icons/map-pin.svg" alt="" />
+                  <span class="data"></span>
+                  <span>&nbsp;kilómetros</span>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
+      </section>
+
+      <section class="banner">
+        <img src="img/banner2.svg" alt="" />
+        <div class="content">
+          <h1>
+            ¡Inspirémonos Por <span class="primary-color">Un Mundo Mejor!</span>
+          </h1>
+          <p>Consumiendo productos sustentables.</p>
+          <p>
+            Creando comunidades dispuestas a apoyar la sustentabilidad global.
+          </p>
+          <p>Viviendo de forma pacífica en armonía con la tierra.</p>
+        </div>
+      </section>
+
+      <section class="banner">
+        <div class="content">
+          <h1>
+            Beneficios Para <span class="primary-color">Negocios Locales</span>
+          </h1>
+          <h3>Mayor visibilidad</h3>
+          <p>
+            Usamos la tecnología de Google para mostrar la ubicación de tu
+            negocio en tiempo real.
+          </p>
+          <h3>Crecimiento en ventas</h3>
+          <p>
+            Diseñamos un Market Place local para el posicionamiento de productos
+            sustentables.
+          </p>
+          <h3>Reconocimiento social</h3>
+          <p>
+            Fomentamos la comercialización de productos que busquen mitigar
+            daños ambientales.
+          </p>
+        </div>
+        <div class="img-wrap">
+          <img src="img/banner3.svg" alt="" />
+          <a href="https://dashboard.almatejida.com/"><button class="cta">Regístrate</button></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="row1">
+        <img class="logo" src="img/logo.svg" alt="alma tejida" />
+        <div class="social-links">
+          <img src="img/icons/facebook.svg" alt="facebook" />
+          <img src="img/icons/linkedin.svg" alt="linkedin" />
+          <img src="img/icons/instagram.svg" alt="instagram" />
+          <img src="img/icons/youtube.svg" alt="youtube" />
+          <img src="img/icons/twitter.svg" alt="twitter" />
+        </div>
+      </div>
+      <div class="row2">
+        Derechos Reservados Alma Tejida - Plataforma mexicana 2023
+      </div>
+    </footer>
+
+    <script type="module" src="scripts/carousel.js"></script>
+  </body>
+</html>
