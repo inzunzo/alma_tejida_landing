@@ -7901,6 +7901,10 @@ a {
   text-decoration: none;
 }
 
+.font-500 {
+  font-weight: 500 !important;
+}
+
 .al-btn {
   border-radius: 100px;
   background: #F4E959;
@@ -7908,6 +7912,10 @@ a {
   font-weight: 700;
   padding: 5px 15px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.al-btn.al-white {
+  background: white;
+  color: #F2709C;
 }
 
 .navbar .nav-item {
@@ -7944,13 +7952,43 @@ a {
   text-align: right;
 }
 
-.secondary-section-text-right-image-left .bullet-list .bullet {
+.bullet-group .bullet-wrapper {
+  width: 49%;
+  float: left;
+  display: flex;
+  margin-bottom: 20px;
+}
+.bullet-group .bullet-wrapper img {
+  width: 25px;
+  margin-right: 5px;
+}
+.bullet-group .bullet-wrapper span {
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 17px;
+  color: #12141B;
+}
+
+.flower-bullet {
+  list-style-image: url("../assets/images/flower-bullet.svg");
+}
+
+.image-grid .grid-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.image-grid .grid-wrapper .grid-element {
+  width: 300px;
+}
+
+.bullet-list .bullet {
   margin-top: 15px;
 }
-.secondary-section-text-right-image-left .bullet-list .bullet .title {
+.bullet-list .bullet .title {
   font-weight: 600;
 }
-.secondary-section-text-right-image-left .bullet-list .bullet .description {
+.bullet-list .bullet .description {
   font-weight: 200;
 }
 
@@ -8015,6 +8053,14 @@ a {
 }
 .pricing-section .pricing-plan-box.pricing-white h3 {
   color: #F2709C;
+}
+
+.ebook-section {
+  background-color: #F476A0;
+  padding: 60px 0;
+}
+.ebook-section img {
+  max-height: 330px;
 }
 
 .footer-leaves {
